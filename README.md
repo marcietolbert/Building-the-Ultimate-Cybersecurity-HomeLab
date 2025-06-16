@@ -2,11 +2,9 @@
 
 ## Overview
 
-Every cybersecurity journey begins with a crucial step: building a strong foundational understanding of the core principles. Without this solid base, navigating the complexities of cybersecurity can be challenging. 
+Every cybersecurity journey begins with an essential first step: establishing a strong foundational understanding of core security concepts. Just as you need a solid base to build a sturdy structure, a cybersecurity professional must have a solid understanding of these principles. That’s why I started an exciting lab-building project designed to enhance practical skills through immersive, hands-on experiences.
 
-From the outset of my journey into the cybersecurity field, one idea has consistently stood out: Home labs are crucial for the growth and development of any cybersecurity professional. I've even come across employers and industry leaders who say they wouldn't hire someone without a lab setup that is being actively used for hands-on projects.
-
-I wholeheartedly agree with this perspective. I've noticed that the more I delve into a topic, the more it is imperative to put my knowledge into practice. Keeping this in mind, I set out to find SOC-related projects that could create what I call a virtual apprenticeship experience. This approach would allow me to gain valuable insights from various industry experts while honing my practical skills and methodologies.
+**Building the Ultimate Cybersecurity HomeLab** is a home lab series created by Francois B. Arthanas, the founder of Cyber Pros Training. The introductory video for the series has been uploaded to his channel Youtube and can be found <a href="https://www.youtube.com/watch?v=KTuzRKmdmlQ">here</a>.
 
 Here enters the MYDIFIR SOC Analyst Challenge. Created by Steven of the YouTube channel <a href="https://www.youtube.com/@MyDFIR">MyDFIR</a>, the MYDIFIR SOC Analyst Challenge is a 30-day challenge aimed at helping aspiring SOC Analysts gain real-world practical experience through the setup and configuration of a realistic SOC enviroment. This challenge not only tasks the SOC Analyst with the creation of a cloud-based lab enviroment using VLTUR, but also tasks the analyst with mimicking real-world attack scenarios for detection and investigation. The goal behind documeting this project is to showcase how the pracital knowledge and experience I've obtained over the course of this challenge was applied within a simulated SOC enviroment. For more information about the challenge the playlist can be found <a href="https://www.youtube.com/watch?v=W3ExS2m6B24&list=PLG6KGSNK4PuBb0OjyDIdACZnb8AoNBeq6&index=1">here</a>.
 
