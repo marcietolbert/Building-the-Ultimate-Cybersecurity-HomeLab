@@ -23,7 +23,7 @@ As always, the goal behind documeting this project is to showcase the pracital k
 
 **Lab 05:** Performing Vulnerbility Scanning with Nessus
 
-**Lab 06:** Burte Force Attack
+**Lab 06:** Application Control with AppLocker
 
 **Lab 07:** Ubuntu Server 24.02 Installation
 
