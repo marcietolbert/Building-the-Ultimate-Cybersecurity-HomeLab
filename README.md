@@ -4,11 +4,11 @@
 
 Every cybersecurity journey begins with an essential first step: establishing a strong foundational understanding of core security concepts. Just as you need a solid base to build a sturdy structure, a cybersecurity professional must have a solid understanding of these principles. That’s why I started an exciting lab-building project designed to enhance practical skills through immersive, hands-on experiences.
 
-**Building the Ultimate Cybersecurity HomeLab** is a home lab series created by Francois B. Arthanas, the founder of Cyber Pros Training. The introductory video for the series has been uploaded to his channel Youtube and can be found <a href="https://www.youtube.com/watch?v=KTuzRKmdmlQ">here</a>.
+**Building the Ultimate Cybersecurity HomeLab** is a home lab series created by Francois B. Arthanas, founder of Cyber Pros Training. The introductory video for the series has been uploaded to his channel Youtube and can be found <a href="https://www.youtube.com/watch?v=KTuzRKmdmlQ">here</a>.
 
-Here enters the MYDIFIR SOC Analyst Challenge. Created by Steven of the YouTube channel <a href="https://www.youtube.com/@MyDFIR">MyDFIR</a>, the MYDIFIR SOC Analyst Challenge is a 30-day challenge aimed at helping aspiring SOC Analysts gain real-world practical experience through the setup and configuration of a realistic SOC enviroment. This challenge not only tasks the SOC Analyst with the creation of a cloud-based lab enviroment using VLTUR, but also tasks the analyst with mimicking real-world attack scenarios for detection and investigation. The goal behind documeting this project is to showcase how the pracital knowledge and experience I've obtained over the course of this challenge was applied within a simulated SOC enviroment. For more information about the challenge the playlist can be found <a href="https://www.youtube.com/watch?v=W3ExS2m6B24&list=PLG6KGSNK4PuBb0OjyDIdACZnb8AoNBeq6&index=1">here</a>.
+I wish to offer a big thanks to Francois for creating this amazing project! I will be updating this writeup as more labs continue to be introduced.
 
-Lastly, I would like to thank Steven and other industry leaders like him who go above and beyond to develop and produce high-quality content. This content is invaluable for individuals at all skill levels, from beginners to experts, who are seeking engaging material to work with. Additionally, I appreciate courses that delve into the thought processes and reasoning of content creators. I believe that true development comes from asking and understanding the "why" behind things. Whenever I posed that question throughout the course, I found it was always answered.
+As always, the goal behind documeting this project is to showcase the pracital knowledge and experience I've obtained as a result of completeing each lab in the series.
 
 ### Skills Learned
 
