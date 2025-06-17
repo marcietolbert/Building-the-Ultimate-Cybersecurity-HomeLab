@@ -25,14 +25,14 @@ As always, the goal behind documeting this project is to showcase the pracital k
 
 **Lab 06:** Application Control with AppLocker
 
-**Lab 07:** Ubuntu Server 24.02 Installation
+**Lab 07:** Mitre ATTT&K (Attack Navigator & DeTTECT)
 
-**Lab 08:** Installing Elastic Agent on Ubuntu
+**Lab 08:** Password Cracking w/John the Ripper and Hash
 
-**Lab 09:** 
+**Lab 09:** CyberChef
 
 **Lab 10:**
 
-**Lab 11:**
+**Lab 11:** Security Oinon Lab Setup
 
-**Lab 12:**
+**Lab 12:** Incident Response with Security Onion Cases
