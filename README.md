@@ -20,6 +20,14 @@ As always, my goal in documenting this and every project in this portfolio is to
 - Flare VM for
 - Security Onion for
 - Cisco Packet Tracer for
+- Wireshark/TCPdump for
+- PowerShell for
+- NMAP for
+- Nessus for
+- AppLocker for
+- Attack Navigator and DeTTECT for
+- John the Ripper and Hash for
+- CyberChef for
 
 ### Skills Learned
 
