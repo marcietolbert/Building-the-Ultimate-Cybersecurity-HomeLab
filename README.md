@@ -15,11 +15,11 @@ As always, my goal in documenting this and every project in this portfolio is to
 ### Tools Used
 
 - Draw.io for logcial diagramming
-- Vultr for provisioning cloud instances
-- ELK for log analysis and management
-- *Fourth point
-- *Fifth point
-- *Sixth Point
+- Kali Linux and Metasploitable for
+- Wazuh for
+- Flare VM for
+- Security Onion for
+- Cisco Packet Tracer for
 
 ### Skills Learned
 
