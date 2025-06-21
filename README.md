@@ -2,13 +2,15 @@
 
 ## Overview
 
-Every cybersecurity journey begins with an essential first step: establishing a strong foundational understanding of core security concepts. Just as you need a solid base to build a sturdy structure, a cybersecurity professional must have a solid understanding of these principles. That’s why I started an exciting lab-building project designed to enhance practical skills through immersive, hands-on experiences.
+Every cybersecurity journey begins with a crucial first step: establishing a solid understanding of core security concepts. Just as a sturdy structure requires a strong foundation, a cybersecurity professional must grasp these fundamental principles. That's why I've embarked on an exciting lab-building project designed to enhance practical skills through immersive, hands-on experiences.
 
-**Building the Ultimate Cybersecurity HomeLab** is a home lab series created by Francois B. Arthanas who is also the founder of <a href="https://www.cyberprostraining.com">Cyber Pros Training</a>. The introductory video for the series has been uploaded to his Youtube channel and can be found <a href="https://www.youtube.com/watch?v=KTuzRKmdmlQ">here</a>.
+**Building the Ultimate Cybersecurity HomeLab** is a series created by Francois B. Arthanas, the founder of <a href="https://www.cyberprostraining.com">Cyber Pros Training</a>. The introductory video for the series is available on his <a href="https://www.youtube.com/watch?v=KTuzRKmdmlQ">Youtube</a> channel.
 
-I wish to offer a big thanks to Francois for creating this amazing project! I will be updating this writeup as more labs continue to be introduced.
+This lab will provide an environment for the practical application of core security concepts, and I will also be installing Cisco Packet Tracer, which serves as an additional resource for understanding key networking fundamentals.
 
-As always, the goal behind documeting this project is to showcase the pracital knowledge and experience I've obtained as a result of completeing each lab in the series.
+I would like to extend my gratitude to Francois for creating this incredible project! I will be updating this write-up as more labs are introduced. 
+
+As always, my goal in documenting this project is to showcase the practical knowledge and experience I've gained by completing each lab in the series.
 
 ## Table of Contents
 **Lab 00:** <a href="https://github.com/marcietolbert/MYDFIR-SOC-Analyst-Challenge/blob/main/Pages/Logical-Diagram.md">SecLab VM(s) Setup</a>
