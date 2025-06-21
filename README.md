@@ -10,7 +10,7 @@ This lab will provide an environment for the practical application of core secur
 
 I would like to extend my gratitude to Francois for creating this incredible project! I will be updating this write-up as more labs are introduced. 
 
-As always, my goal in documenting this project is to showcase the practical knowledge and experience I've gained by completing each lab in the series.
+As always, my goal in documenting this and every project in this portfolio is to showcase the practical knowledge and experience I've gained through labbing.
 
 ## Table of Contents
 **Lab 00:** <a href="https://github.com/marcietolbert/MYDFIR-SOC-Analyst-Challenge/blob/main/Pages/Logical-Diagram.md">SecLab VM(s) Setup</a>
