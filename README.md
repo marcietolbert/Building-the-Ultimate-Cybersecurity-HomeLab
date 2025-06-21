@@ -12,8 +12,10 @@ I would like to extend my gratitude to Francois for creating this incredible pro
 
 As always, my goal in documenting this and every project in this portfolio is to showcase the practical knowledge and experience I've gained through labbing.
 
-## Table of Contents
+## Labs
 **Lab 00:** <a href="https://github.com/marcietolbert/MYDFIR-SOC-Analyst-Challenge/blob/main/Pages/Logical-Diagram.md">SecLab VM(s) Setup</a>
+
+**Lab 00a:** <a href="https://github.com/marcietolbert/MYDFIR-SOC-Analyst-Challenge/blob/main/Pages/Logical-Diagram.md">Packet Tracer Install</a>
 
 **Lab 01:** <a href="https://github.com/marcietolbert/MYDFIR-SOC-Analyst-Challenge/blob/main/Pages/Elasticserach-and-Kibana-Setup.md">Linux Essential Commands</a>
 
