@@ -38,7 +38,7 @@ As always, my goal in documenting this and every project in this portfolio is to
 - *How to create alerts and dashboards
 
 ## Labs
-**Lab 00:** <a href="https://github.com/marcietolbert/MYDFIR-SOC-Analyst-Challenge/blob/main/Pages/Logical-Diagram.md">SecLab, SOC, and Malware Analysis VM Setup</a>
+**Lab 00:** <a href="https://github.com/marcietolbert/Building-the-Ultimate-Cybersecurity-HomeLab">SecLab, SOC, and Malware Analysis VM Setup</a>
 
 **Lab 00a:** <a href="https://github.com/marcietolbert/MYDFIR-SOC-Analyst-Challenge/blob/main/Pages/Logical-Diagram.md">Packet Tracer Install</a>
 
