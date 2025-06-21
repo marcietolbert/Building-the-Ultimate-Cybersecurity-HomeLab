@@ -15,9 +15,10 @@ As always, my goal in documenting this and every project in this portfolio is to
 ### Tools Used
 
 - Draw.io for logcial diagramming
-- Kali Linux and Metasploitable for
-- Wazuh for
-- Flare VM for
+- Kali for attacking
+- Metasploitable for a vulnerable machine to attack
+- Wazuh for threat detection, intrusion prevention, and security monitoring
+- Flare VM for sandboxing
 - Security Onion for
 - Cisco Packet Tracer for
 - Wireshark/TCPdump for
@@ -32,8 +33,8 @@ As always, my goal in documenting this and every project in this portfolio is to
 ### Skills Learned
 
 - How to draw a logical diagram
-- How to setup and configure a basic SOC enviroment
-- *How to attack, detect, and investigate
+- How to setup and configure a home lab enviroment
+- How to attack, detect, and investigate
 - *How to create alerts and dashboards
 
 ## Labs
