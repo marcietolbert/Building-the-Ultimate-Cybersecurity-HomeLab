@@ -17,8 +17,9 @@ As always, my goal in documenting this and every project in this portfolio is to
 - Draw.io for logcial diagramming
 - Kali for attacking
 - Metasploitable for vulnerable target
-- Wazuh (Ubuntu Server)and Ubuntu Client for threat detection, intrusion prevention, and security monitoring
-- Flare VM (Win10) for sandboxing
+- Wazuh for SIEM/Security Monitoring
+- Ubuntu Client for Regular workstation
+- Flare VM (Win10) for Reverse engineering / sandboxed malware analysis machine
 - Security Onion for
 - Cisco Packet Tracer for
 - Wireshark/TCPdump for
