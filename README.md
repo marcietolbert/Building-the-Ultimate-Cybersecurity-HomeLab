@@ -16,7 +16,7 @@ As always, my goal in documenting this and every project in this portfolio is to
 
 - Draw.io for logcial diagramming
 - Kali for attacking
-- Metasploitable for a vulnerable machine to attack
+- Metasploitable for vulnerable target
 - Wazuh (Ubuntu Server)and Ubuntu Client for threat detection, intrusion prevention, and security monitoring
 - Flare VM (Win10) for sandboxing
 - Security Onion for
