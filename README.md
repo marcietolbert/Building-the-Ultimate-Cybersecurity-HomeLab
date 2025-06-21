@@ -12,6 +12,17 @@ I would like to extend my gratitude to Francois for creating this incredible pro
 
 As always, my goal in documenting this and every project in this portfolio is to showcase the practical knowledge and experience I've gained through labbing.
 
+### Tools Used
+
+- Draw.io for logcial diagramming
+- Vultr for provisioning cloud instances
+- ELK for log analysis and management
+- *Fourth point
+- *Fifth point
+- *Sixth Point
+
+
+
 ## Labs
 **Lab 00:** <a href="https://github.com/marcietolbert/MYDFIR-SOC-Analyst-Challenge/blob/main/Pages/Logical-Diagram.md">SecLab VM(s) Setup</a>
 
