@@ -21,7 +21,13 @@ As always, my goal in documenting this and every project in this portfolio is to
 - *Fifth point
 - *Sixth Point
 
+### Skills Learned
 
+- How to draw a logical diagram
+- How to setup and configure ELK
+- How to attack, detect, and investigate
+- How to create alerts and dashboards
+- How to setup and intergrate a ticketing system
 
 ## Labs
 **Lab 00:** <a href="https://github.com/marcietolbert/MYDFIR-SOC-Analyst-Challenge/blob/main/Pages/Logical-Diagram.md">SecLab VM(s) Setup</a>
