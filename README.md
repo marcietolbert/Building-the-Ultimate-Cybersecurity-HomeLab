@@ -12,14 +12,15 @@ I would like to extend my gratitude to Francois for creating this incredible pro
 
 As always, my goal in documenting this and every project in this portfolio is to showcase the practical knowledge and experience I've gained through labbing.
 
-### Tools Used
+### Tools and Software Used
 
-- Draw.io for logcial diagramming
-- Kali for attacking
-- Metasploitable for vulnerable target
-- Wazuh for SIEM/Security Monitoring
+- Draw.io (Logcial Diagramming)
+- VMware Workstation Pro (Hypervisor)
+- Kali (Attack Machine)
+- Metasploitable  (Vulnerable Target)
 - Ubuntu Client for Regular workstation
-- Flare VM (Win10) for Reverse engineering / sandboxed malware analysis machine
+- Ubuntu Server (Wazah | SIEM/Security Monitoring)
+- Flare VM (Win10 | Reverse Engineering/Sandboxed Malware Analysis Machine)
 - Security Onion for
 - Cisco Packet Tracer for
 - Wireshark/TCPdump for
