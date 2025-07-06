@@ -37,7 +37,7 @@ As always, my goal in documenting this and every project in this portfolio is to
 - How to draw a logical diagram
 - How to setup and configure a home lab enviroment
 - How to attack, detect, and investigate
-- *How to create alerts and dashboards
+- How to create alerts and dashboards
 
 ## Labs
 **Lab 00:** <a href="https://github.com/marcietolbert/Building-the-Ultimate-Cybersecurity-HomeLab/blob/main/Labs/SEC-SOC-Malware-Analysis-VM-Setup.md">SecLab, SOC, and Malware Analysis VM Setup</a>
