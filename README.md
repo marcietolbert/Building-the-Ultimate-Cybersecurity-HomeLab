@@ -6,9 +6,9 @@ Every cybersecurity journey begins with a crucial first step: establishing a sol
 
 **Building the Ultimate Cybersecurity HomeLab** is a series created by Francois B. Arthanas, founder of <a href="https://www.cyberprostraining.com">Cyber Pros Training</a>. The introductory video for the series is available on his <a href="https://www.youtube.com/watch?v=KTuzRKmdmlQ">YouTube</a> channel. As the **Building the Ultimate Cybersecurity HomeLab** has paid sections only accessible through Cyber Pros Training, I will limit this write-up to the free modules uploaded to YouTube.
 
-It is also crucial to have a fundamental understanding of networking, as these principles serve as the backbone for all cybersecurity concepts. To deepen this understanding, I will be integrating practical labs from Mr. Arthanas’s **CompTIA Network+ Fee Training**, which can be accessed <a href="https://www.youtube.com/live/2w8WOGUSfGI?si=qUyvRd8MYpwnz0IS">here</a>.
+It is also crucial to have a fundamental understanding of networking, as these principles serve as the backbone for all cybersecurity concepts. To deepen this understanding, I will be integrating practical labs from Mr. Arthanas’s **CompTIA Network+ Free Training**, which can be accessed <a href="https://www.youtube.com/live/2w8WOGUSfGI?si=qUyvRd8MYpwnz0IS">here</a>.
 
-I want to extend my gratitude to Francois for creating this incredible project! I will be updating this write-up as more labs are introduced. 
+I want to express my gratitude to Francois for creating this amazing project! If any additional modules are released to the public, I will be sure to update this write-up. 
 
 As always, my goal in documenting every project in this portfolio is to showcase the practical knowledge and experience I've gained through learning.
 
