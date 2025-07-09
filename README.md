@@ -6,21 +6,19 @@ Every cybersecurity journey begins with a crucial first step: establishing a sol
 
 **Building the Ultimate Cybersecurity HomeLab** is a series created by Francois B. Arthanas, founder of <a href="https://www.cyberprostraining.com">Cyber Pros Training</a>. The introductory video for the series is available on his <a href="https://www.youtube.com/watch?v=KTuzRKmdmlQ">YouTube</a> channel. As the **Building the Ultimate Cybersecurity HomeLab** has paid sections only accessible through Cyber Pros Training, I will limit this write-up to the free modules uploaded to YouTube.
 
-I have chosen to do a write-up on this project in conjunction labs from Mr. Arthanas’s **CompTIA Network+ Free Training** found here. 
+It is also crucial to have a fundamental understanding of networking, as these principles serve as the backbone for all cybersecurity concepts. To deepen this understanding, I will be integrating practical labs from Mr. Arthanas’s **CompTIA Network+ Fee Training**, which can be accessed <a href="https://www.youtube.com/live/2w8WOGUSfGI?si=qUyvRd8MYpwnz0IS">here</a>. This combination of theoretical knowledge and hands-on experience will provide a comprehensive foundation in both networking and cybersecurity.
 
-This lab will provide an environment for the practical application of core security concepts. I will also be installing Cisco Packet Tracer, which will serve as an additional resource for understanding key networking fundamentals.
+I want to extend my gratitude to Francois for creating this incredible project! I will be updating this write-up as more labs are introduced. 
 
-I would like to extend my gratitude to Francois for creating this incredible project! I will be updating this write-up as more labs are introduced. 
-
-As always, my goal in documenting this and every project in this portfolio is to showcase the practical knowledge and experience I've gained through labbing.
+As always, my goal in documenting every project in this portfolio is to showcase the practical knowledge and experience I've gained through learning.
 
 ### Tools and Software Used
 
-- Draw.io (Logcial Diagramming)
+- Draw.io (Logical Diagramming)
 - VMware Workstation Pro (Hypervisor)
 - Kali (Attack Machine)
-- Metasploitable  (Vulnerable Target)
-- Ubuntu Client for Regular workstation
+- Metasploitable (Vulnerable Target)
+- Ubuntu Client (Regular Workstation)
 - Ubuntu Server (Wazah | SIEM/Security Monitoring)
 - Flare VM (Win10 | Reverse Engineering/Sandboxed Malware Analysis Machine)
 - Security Onion for
@@ -37,7 +35,7 @@ As always, my goal in documenting this and every project in this portfolio is to
 ### Skills Learned
 
 - How to draw a logical diagram
-- How to setup and configure a home lab enviroment
+- How to set up and configure a home lab environment
 - How to attack, detect, and investigate
 - How to create alerts and dashboards
 
