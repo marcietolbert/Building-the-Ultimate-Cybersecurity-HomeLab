@@ -2,9 +2,9 @@
 
 ## Overview
 
-Every cybersecurity journey begins with a crucial first step: establishing a solid understanding of core security concepts. Just as a sturdy structure requires a strong foundation, a cybersecurity professional needs to understand these fundamental principles. That's why I've embarked on an exciting lab-building project designed to enhance practical skills through immersive, hands-on experiences.
+Every cybersecurity journey begins with a crucial first step: establishing a solid understanding of core security concepts. That's why I've embarked on an exciting lab-building project designed to enhance practical skills through immersive, hands-on experiences.
 
-**Building the Ultimate Cybersecurity HomeLab** is a series created by Francois B. Arthanas, the founder of <a href="https://www.cyberprostraining.com">Cyber Pros Training</a>. The introductory video for the series is available on his <a href="https://www.youtube.com/watch?v=KTuzRKmdmlQ">Youtube</a> channel.
+**Building the Ultimate Cybersecurity HomeLab** is a series created by Francois B. Arthanas, founder of <a href="https://www.cyberprostraining.com">Cyber Pros Training</a>. The introductory video for the series is available on his <a href="https://www.youtube.com/watch?v=KTuzRKmdmlQ">Youtube</a> channel.
 
 This lab will provide an environment for the practical application of core security concepts, and because of this, I will also be installing Cisco Packet Tracer, which will serve as an additional resource for understanding key networking fundamentals.
 
