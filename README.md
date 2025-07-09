@@ -18,7 +18,7 @@ As always, my goal in documenting every project in this portfolio is to showcase
 - VMware Workstation Pro (Hypervisor)
 - Kali (Attack Machine)
 - Metasploitable (Vulnerable Target)
-- Ubuntu Client (Regular Workstation)
+- Ubuntu Client (Workstation)
 - Ubuntu Server (Wazah | SIEM/Security Monitoring)
 - Flare VM (Win10 | Reverse Engineering/Sandboxed Malware Analysis Machine)
 - Security Onion for
