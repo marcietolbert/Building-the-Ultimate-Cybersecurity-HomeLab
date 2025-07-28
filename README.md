@@ -44,8 +44,6 @@ As always, my goal in documenting every project in this portfolio is to showcase
 
 **Lab 00a:** <a href="https://github.com/marcietolbert/MYDFIR-SOC-Analyst-Challenge/blob/main/Pages/Logical-Diagram.md">Packet Tracer Install</a>
 
-**Lab 01:** <a href="https://github.com/marcietolbert/MYDFIR-SOC-Analyst-Challenge/blob/main/Pages/Elasticserach-and-Kibana-Setup.md">Linux Essential Commands</a>
-
 **Lab 02:** Sniffing Network Traffic with Wireshark/TCPdump
 
 **Lab 03:** Windows Admin Essentials (GUI, CMD, and PowerShell)
