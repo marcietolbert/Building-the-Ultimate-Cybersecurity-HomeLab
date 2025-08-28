@@ -6,9 +6,9 @@ Every cybersecurity journey begins with a crucial first step: establishing a sol
 
 **Building the Ultimate Cybersecurity HomeLab** is a series created by Francois B. Arthanas, founder of <a href="https://www.cyberprostraining.com">Cyber Pros Training</a>. The introductory video for the series is available on his <a href="https://www.youtube.com/watch?v=KTuzRKmdmlQ">YouTube</a> channel. As the **Building the Ultimate Cybersecurity HomeLab** has paid sections only accessible through Cyber Pros Training, I will limit this write-up to the free modules uploaded to YouTube.
 
-I want to express my gratitude to Francois for creating this amazing project! If any additional modules are released to the public, I will be sure to update this write-up. 
+I want to express my gratitude to Francois for creating this amazing project! If any additional modules are released to the public, I will be sure to update the relevant sections. 
 
-As always, my goal in documenting every project in this portfolio is to showcase the practical knowledge and experience I've gained through learning.
+As always, my goal in documenting any project in this portfolio is to showcase the practical knowledge and experience I've gained through my learning.
 
 ### Tools and Software Used
 
