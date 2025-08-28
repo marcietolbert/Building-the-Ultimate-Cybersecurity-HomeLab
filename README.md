@@ -12,14 +12,14 @@ As always, my goal in documenting any project in this portfolio is to showcase t
 
 ### Tools and Software Used
 
-- Draw.io (Logical Diagramming)
-- VMware Workstation Pro (Hypervisor)
-- Kali (Attack Machine)
-- Metasploitable (Vulnerable Target)
-- Ubuntu Client (Workstation)
-- Ubuntu Server (Wazah | SIEM/Security Monitoring)
-- Flare VM (Win10 | Reverse Engineering/Sandboxed Malware Analysis Machine)
-- Security Onion for
+- **LucidChart** (Logical Diagramming)
+- **VMware Workstation Pro** (Hypervisor)
+- **Kali Linux** (Attack Machine)
+- **Metasploitable** (Vulnerable Target)
+- **Ubuntu Client** (Workstation)
+- **Ubuntu Server** (Wazah | SIEM/Security Monitoring)
+- **Flare VM** (Win10 | Reverse Engineering/Sandboxed Malware Analysis Machine)
+- **Security Onion** (SIEM)
 - Wireshark/TCPdump for
 - PowerShell for
 - NMAP for
