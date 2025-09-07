@@ -21,7 +21,6 @@ As always, my goal in documenting any project in this portfolio is to showcase t
 - **Flare VM** (Win10 | Reverse Engineering/Sandboxed Malware Analysis Machine)
 - **Security Onion** (SIEM/Security Monitoring)
 - **Wireshark/TCPdump** (Network Traffic Analysis)
-- PowerShell for
 - NMAP for
 - Nessus for
 - AppLocker for
