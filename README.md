@@ -20,40 +20,21 @@ As always, my goal in documenting any project in this portfolio is to showcase t
 - **Ubuntu Server** (Wazah | SIEM/Security Monitoring)
 - **Flare VM** (Win10 | Reverse Engineering/Sandboxed Malware Analysis Machine)
 - **Security Onion** (SIEM/Security Monitoring)
-- **Wireshark/TCPdump** (Network Traffic Analysis)
-- NMAP for
-- Nessus for
-- AppLocker for
-- Attack Navigator and DeTTECT for
-- John the Ripper and Hash for
-- CyberChef for
+- **Wireshark/tcpdump** (Network Traffic Analysis)
+- **Nessus** (Vulnerability Scanning)
 
 ### Skills Learned
 
-- How to draw a logical diagram
-- How to set up and configure a home lab environment
-- How to attack, detect, and investigate
-- How to create alerts and dashboards
+- How to draw a logical diagram.
+- How to set up and configure a home lab environment.
+- How to attack, detect, and investigate.
+- How to create alerts and dashboards.
 
 ## Labs
 **Lab 00:** <a href="https://github.com/marcietolbert/Building-the-Ultimate-Cybersecurity-HomeLab/blob/main/Labs/SEC-SOC-Malware-Analysis-VM-Setup.md">SecLab, SOC, and Malware Analysis VM Setup</a>
 
-**Lab 02:** Sniffing Network Traffic with Wireshark/TCPdump
-
-**Lab 04:** System, Port, and Vulnerbility Discovery with Nmap
+**Lab 02:** Sniffing Network Traffic with Wireshark/tcpdump
 
 **Lab 05:** Performing Vulnerbility Scanning with Nessus
-
-**Lab 06:** Application Control with AppLocker
-
-**Lab 07:** Mitre ATTT&K (Attack Navigator & DeTTECT)
-
-**Lab 08:** Password Cracking w/John the Ripper and Hash
-
-**Lab 09:** CyberChef
-
-**Lab 10:**
-
-**Lab 11:** Security Oinon Lab Setup
 
 **Lab 12:** Incident Response with Security Onion Cases
