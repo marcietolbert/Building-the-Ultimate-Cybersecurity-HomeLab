@@ -31,3 +31,9 @@ Linux categorizes its commands into four main types: external commands, shell bu
 
 If we look at the ‘man’ command, it falls into the external command category. Why? That is because most commands are actual programs stored as binaries or scripts on disk, rather than being built into the shell. Typically in directories like /bin, /usr/bin, or /usr/local/bin. You can confirm that man is indeed a program by executing ￼the command " man which will output the absolute path of the executable file. When executed, the man command works by looking up formatted manual pages stored under /usr/share/man/.
 
+The help command, on the other hand, functions as a shell built-in because the command is built directly into the shell (interpreter). You don’t need to search the file system, as the shell’s processes can execute the command code directly. Shell built-ins control various aspects of the shell, including navigation, environment, shell control, and utilities. The purpose of the help command is to display information solely about shell built-ins.
+
+For commands that are not shell built-ins, there is a help variant known as double-dash help, which provides quick assistance on external programs. The program that the option applies to implements this command-line option.
+
+Our next task in this lab will be to run both of these commands. First, let’s run ‘man tcpdump’ and examine the output.
+
