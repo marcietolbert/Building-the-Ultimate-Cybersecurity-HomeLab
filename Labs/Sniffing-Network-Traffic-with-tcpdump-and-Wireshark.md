@@ -37,3 +37,15 @@ For commands that are not shell built-ins, there is a help variant known as doub
 
 Our next task in this lab will be to run both of these commands. First, let’s run ‘man tcpdump’ and examine the output.
 
+**PHOTO**
+
+Running the command above will output tcpdumps manual page. The page will display various sections, including a synopsis of the options relevant to the command, a description of the command, and a detailed options section where each option is defined.
+
+Press *q* to quit.
+
+Now, let’s try running the - - help option against the tcpdump command. tcpdump - -help
+
+**PHOTO**
+
+You will get a usage output for the various options tcpdump uses.
+
