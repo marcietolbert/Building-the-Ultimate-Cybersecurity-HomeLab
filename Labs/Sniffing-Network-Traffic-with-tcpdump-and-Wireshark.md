@@ -27,3 +27,7 @@ Open a terminal on the Kali Linux machine.
 
 When dealing with any command, you might occasionally need help understanding the command's purpose and how it operates. To find answers, try using the Internet with specialized sites, such as Explain Shell, which can help you analyze commands and understand how they work. Alternatively, if you prefer to stay within the terminal, you can use the 'man' and 'help' commands.  
 
+Linux categorizes its commands into four main types: external commands, shell built-ins, functions, and keywords. In this lab, we will focus only on external and shell built-in commands.
+
+If we look at the ‘man’ command, it falls into the external command category. Why? That is because most commands are actual programs stored as binaries or scripts on disk, rather than being built into the shell. Typically in directories like /bin, /usr/bin, or /usr/local/bin. You can confirm that man is indeed a program by executing ￼the command " man which will output the absolute path of the executable file. When executed, the man command works by looking up formatted manual pages stored under /usr/share/man/.
+
