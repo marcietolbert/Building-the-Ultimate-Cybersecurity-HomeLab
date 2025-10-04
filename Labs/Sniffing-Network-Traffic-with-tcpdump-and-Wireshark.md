@@ -20,7 +20,7 @@ Network packet analyzers such as tcpdump and Wireshark capture data units (data)
 
 Lastly, let's explore the differences between tcpdump and Wireshark. The main difference between the two is that tcpdump is a command-line-based tool while Wireshark is a GUI-based tool. Because of this, tcpdump is text only and therefore more lightweight than Wireshark, which is graphical and thus heavier on system resources. A good rule of thumb is to be knowledgeable in both, as you never know in the field which tool you may have to use.
 
-## tcpdump Lab
+## man and Shell Built-ins
 First, power on the Kali Linux and Meta machines and sign in to both.
 
 Open a terminal on the Kali Linux machine.
@@ -48,4 +48,16 @@ Now, let’s try running the - - help option against the tcpdump command. tcpdum
 **PHOTO**
 
 You will get a usage output for the various options tcpdump uses.
+
+## tcpdump Lab
+The first tool that we will be working with in this lab is tcpdump, so let's start there.
+
+If you recall, tcpdump works by capturing network traffic from the network interface card. To see what interfaces are available for traffic capture run the following command: tcpdump -D
+
+The system prints a list of available network interfaces from which tcpdump can capture packets.
+
+**PHOTO**
+
+
+
 
