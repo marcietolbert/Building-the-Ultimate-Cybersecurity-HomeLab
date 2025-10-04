@@ -58,6 +58,38 @@ The system prints a list of available network interfaces from which tcpdump can 
 
 **PHOTO**
 
+For this lab, we will be working with eth0, which is the first interface listed in the output. Let’s clear the screen.
 
+Now we will begin to capture network traffic from the eth0 interface by entering the following command: sudo tcpdump -i eth0
+
+With this command, we instruct the shell to run tcpdump with elevated privileges to capture any network traffic that passes through the eth0 interface.
+
+After we enter the kali user's password, tcpdump will begin capturing eth0 network traffic.
+
+Let's start to generate some traffic by opening another terminal and pinging Google: ping google.com
+
+As you can see, the ICMP Echo Request and Reply packets sent to and received from Google by the second terminal are being captured by tcpdump in the first terminal. 
+
+Press Ctrl+C to stop the ping.
+
+Let's examine one of the lines from the conversation that occurred between our endpoint and the Google server we contacted. The line contains several fields arranged from left to right: timestamp, source IP, destination, protocol used, message type, and flags.
+
+Choose any line that shows an IMCP Echo Request as the protocol used (that would be our endpoint). Underneath that, on the following line, you should see the IMCP Echo Response protocol and the message type being used by the Google server to respond to our endpoint.
+
+Clear the screen
+
+Now that we have run a fairly basic scan, let’s try a capture that provides a more detailed output.
+
+Run the following command:  sudo tcpdump -i eth0 -XA
+
+The new command we are running keeps the exact requests from the first command and also prints the hex and ASCII representations of each packet, excluding the link-level header (Layer 2, according to the OSI model).
+
+Now that we've defined the new capture we want to run, let's generate some traffic again: from the second terminal, ping the Meta machine: ping 10.0.0.11.
+
+After letting the ping run for a few seconds, stop it using Ctrl+C
+
+Let’s now look back at the first terminal for our tcpdump capture. Then scroll up to the start of the capture.
+
+If we examine the first line of the first packet, we see that it presents the same type of information as the first capture. However, take a look at the second line of the packet. This line marks the start of the hex and ASCII information we requested with the -Xa option used at the end of the command we ran.
 
 
