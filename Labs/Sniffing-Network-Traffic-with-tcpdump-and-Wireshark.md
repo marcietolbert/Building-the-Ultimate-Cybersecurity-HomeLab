@@ -1,5 +1,5 @@
 # Sniffing Network Traffic with tcpdump and Wireshark
-Welcome back to Lab Two in the **Building the Ultimate Cybersecurity Homelab** series! This write-up will discuss tcpdump and Wireshark, two network packet analysis tools that every cybersecurity professional should know and understand.
+Welcome back to Lab Two in the **Building the Ultimate Cybersecurity Homelab** series! This write-up will discuss tcpdump and Wireshark, two network packet analysis tools that every cybersecurity professional should be familiar with.
 
 First on our agenda is a review of tcpdump and Wireshark, highlighting their similarities, differences, and use cases.
 
