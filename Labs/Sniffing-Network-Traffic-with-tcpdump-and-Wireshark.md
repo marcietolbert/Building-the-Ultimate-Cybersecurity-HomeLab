@@ -92,4 +92,14 @@ Let’s now look back at the first terminal for our tcpdump capture. Then scroll
 
 If we examine the first line of the first packet, we see that it presents the same type of information as the first capture. However, take a look at the second line of the packet. This line marks the start of the hex and ASCII information we requested with the -Xa option used at the end of the command we ran.
 
+Hexadecimal (hex) is a numbering system with a base of 16 that uses **0–9** and **A–F**. ASCII (**American Standard Code for Information Interchange**), on the other hand, is a character encoding standard that maps numbers to letters, digits, symbols, and control characters. The packet carries its payload—the content being delivered—in hex and ASCII values. Specifically, ￼hex is a representation of raw packet bytes while the ASCII is an interpretation of those bytes as characters (when printable).
+
+In the first packet, our endpoint (10.0.0.11) is reaching out to or pinging (using ICMP) the Meta machine (10.0.0.1) to check if the machine is in an up state and able to converse by sending an Echo Request message. The hex and ASCII values we see indicate the payload (content delivered) to the Meta machine. Since the hexadecimal view of the payload is not human-readable, we need to examine the ASCII view, which displays a payload of 01234567.
+
+Let’s now look for an Echo Reply message (response) from the Meta machine. 
+
+The Echo Reply message below is the response from the Meta machine, echoing back the contents of the initial payload sent by our endpoint. This reply message confirms that the Meta machine is in an up state and ready to converse.
+
+## Netcat
+
 
