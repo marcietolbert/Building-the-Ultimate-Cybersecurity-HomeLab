@@ -25,5 +25,5 @@ First, power on the Kali Linux and Meta machines and sign in to both.
 
 Open a terminal on the Kali Linux machine.
 
-Now, when working with any command there might come a time when you will need some assistance in understanding what the command does and how it operates. In order to get answers to your question one could choose several ways to go about their research. One…you could to use the Internet ￼as a resource to leverage specialized sites such as explain shell to break commands and how they function. However, should you want to remain in the terminal there are you’d want to utilize: man and help. 
+When dealing with any command, you might occasionally need help understanding the command's purpose and how it operates. To find answers, try using the Internet with specialized sites, such as Explain Shell, which can help you analyze commands and understand how they work. Alternatively, if you prefer to stay within the terminal, you can use the 'man' and 'help' commands.  
 
