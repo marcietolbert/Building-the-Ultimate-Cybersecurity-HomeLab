@@ -101,5 +101,61 @@ Let’s now look for an Echo Reply message (response) from the Meta machine.
 The Echo Reply message below is the response from the Meta machine, echoing back the contents of the initial payload sent by our endpoint. This reply message confirms that the Meta machine is in an up state and ready to converse.
 
 ## Netcat
+Now, before we jump into Wireshark, we are next tasked with exploring netcat, so let’s take a bit of a detour. Netcat, sometimes referred to as the Swiss Army knife of networking, serves as a versatile command-line utility that performs various network tasks, including creating and listening for connections, port scanning, data transfer, and more. For this lab, we will be using netcat to create and listen for connections.
 
+As instructed, the first thing we will do is open three terminals. We already have two, so make sure those terminals have been cleared for a clean slate, and then open a third terminal. 
+
+In the first terminal, we will use tcpdump to capture the traffic taking place over the network interface; however, we will capture traffic over the lo (loopback) interface instead of the eth0 interface.
+
+Run the following command: sudo tcpdump -i lo -XA
+
+Next, we need to create a netcat listener on the second terminal. To do that, we need to open a port for our listener to connect to. In our second terminal run the following command: nc -l -p 4444
+
+This command instructs our shell to use netcat as a server, operating in listening mode (-l) and binding the listener to port 4444. The netcat listener will now be listening on port 4444.
+
+Now run the following command in the third terminal: nc 127.0.0.1 4444
+
+The command we just ran is telling the shell to use netcat to **open a TCP connection to port 4444 on the local machine (127.0.0.1)**.
+
+We have now established an active connection between the second and third terminal.
+
+Now, using either terminal, you can send messages back and forth between the two. Try it now by sending three to four messages from Terminal 2 to Terminal 3. Whatever you type into the second terminal should appear in the third terminal.
+
+So, if we were to pretend our simulated lab were a real-world scenario￼, then Terminal Two would be our attack machine, where we would set up our listener and, using some payload, send it to our victim machine to compromise the machine and force it to connect back to the attacker’s listening machine.
+
+Let’s jump back to our tcpdump capture to see what it logged.
+
+Scroll through the packet captures to locate the first message you sent in the ASCII view. As you continue, you can follow the subsequent messages sent to Terminal 3.
+
+Stop the capture: Ctrl+C
+
+Clear the screen: clear
+
+Now, let’s look at how to write tcpdump captures to a file. Run the following command. sudo tcpdump -i eth0 -w wakanda.pcap
+
+This command instructs the shell to run a tcpdump capture with elevated privileges on the eth0 interface and to write the capture to a file named wakanda.pcap. 
+
+To test this, pull up Terminal 2 or 3 and send a few more messages to the other terminal.
+
+Then, terminate the connection to the other terminal using Ctrl+C
+
+Close the third terminal, clear the screen on the second terminal, and then run the following command to ping the Meta machine: ping 10.0.0.11
+
+Now, let’s run the following command to help generate more network traffic for our capture: ' ftp 10.0.0.11'.
+
+Log in to the Meta machine with the mfsadmin credentials 
+
+Close the terminal window, then stop the TCPdump capture currently running in the first terminal using Ctrl+C.
+
+Now, if we run the 'ls' command, we can see that we have a wakanda.pcap file in our current working directory.
+
+To read the capture, run the following command: sudo tcpdump -r wakanda.pcap. Using the -r option allows us to read the pcap file.
+
+You can also run the -XA options against the file to view both the hex and ASCII representations.
+
+Scroll through the capture to see what you can find related to logging into the Meta machine. 
+
+Clear the screen.
+
+## Wireshark
 
