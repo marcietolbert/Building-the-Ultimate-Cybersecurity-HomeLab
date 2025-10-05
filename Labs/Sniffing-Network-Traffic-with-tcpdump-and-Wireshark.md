@@ -158,4 +158,36 @@ Scroll through the capture to see what you can find related to logging into the 
 Clear the screen.
 
 ## Wireshark
+Now let’s open Wireshark.
 
+Click the Kali logo in the upper left corner and search for Wireshark.
+
+Let’s start capturing traffic on the eth0 interface just as we did in tcpdump by double-clicking the eth0 interface.
+
+Start generating network traffic by opening the terminal and pinging the Meta machine four times using the following command: ping -c 4 10.0.0.11.
+
+As the ping commences, Wireshark begins capturing the network traffic.
+
+Minimize the terminal once the ping finishes.
+
+What you are now seeing is the same information that was presented to us in tcpdump, just in a more aesthetically pleasing fashion. The column information is the same; from left to right, you have the timestamp, source IP, destination IP, protocol length, and info.
+
+And if we examine the packets, you can clearly see the Echo request and reply packets. Since we selected a count of four ping packets, the Meta machine will send four reply responses.
+
+The bottom right half of the screen displays the hex and ASCII information obtained when running our tcpdump capture with the -XA option. As you select each packet in the central pane, the hex and ASCII information will dynamically change to reflect the information for the selected packet. 
+
+On the bottom left is the Packet Details pane, which provides a detailed breakdown of the selected packet's protocol. As you can see, this pane follows the structure of the OSI model. Choose a packet and click through each section in the packet details pane to see how the packet breaks down.
+
+You can also right-click a packet and select Follow — Stream to view the packet details in another format.
+
+You can now stop the capture by clicking the red stop button.
+
+Lastly, let’s see how to read a PCAP file using Wireshark. Let’s use the wakanda.pcap file we saved from our tcpdump capture. Open the file using the terminal by running the command: wireshark wakanda.pcap
+
+ Let’s use Wireshark’s display filter feature. If you recall, we used ftp to log in to the Meta machine. So let’s filter our traffic to display ftp only. In the search bar enter ftp. The central pane now only displays ftp traffic. 
+
+Now, let’s try filtering for ICMP traffic by entering icmp into the search bar.
+
+Search for ftp traffic again, then right-click on the first packet and select Follow > TCP Stream.
+
+You can now see pertinent information￼, such as the tool used, credentials in clear text, and confirmation that the login was successful, which confirms that the credentials above are valid. 
