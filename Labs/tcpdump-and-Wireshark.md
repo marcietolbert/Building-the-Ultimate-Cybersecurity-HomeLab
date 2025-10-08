@@ -6,13 +6,11 @@ First on our agenda is a review of tcpdump and Wireshark, highlighting their sim
 ## tcpdump vs Wireshark: A Head-to-Head Comparison 
 Let's break down how tcpdump and Wireshark function in terms of the data they collect.
 
-Three key elements are required for a network packet analyzer to analyze network packets (data): a network, a network stack, and network traffic.
+Three key elements are required for a network packet analyzer to analyze network packets: a network, a network stack, and network traffic. 
 
-For a network packet analyzer to function, there must be network traffic to analyze. So, how is network traffic generated? First, we need a network, and a typical example of this is a Local Area Network (LAN). 
+When two or more devices are connected together a LAN (Local Area Network) is formed, giving the devices the ability to exchange data and share resources. This means for example, that all of the connected devices in your home, through components such as a network interface card (enabling the device to physically join the LAN ), a switch, and/or wireless access points, are part of your local area network. It's important to note that the size of a LAN is generally limited to a specific area, such as a home, a single floor, or an office building.
 
-When various types of connections, such as wired or wireless, are used to connect two or more devices, this forms a LAN, allowing said devices to exchange data and share resources. So, all connected devices in your home, which are connected through components such as a network interface card (enabling the device to join a LAN physically), a switch, and/or wireless access points, are part of your local area network. It's important to note that the size of a LAN is generally limited to a specific area, such as a home, a single floor, or an office building.
-
-However, the shared connection that links them doesn't allow them to "talk" to one another. For that, we need a network stack. So just what is a network stack? A network stack is the implementation of networking protocols inside a device's operating system (and sometimes firmware/hardware) that allows a device to understand, send, and receive data over a network. We have models like the OSI and TCP/IP model that group these protocols into layers, which shows a theoretical and practical view (depending on which model you use) of how these layers operate.
+However, the shared connection that links these devices together isn’t what allows them to "talk" to one another. For that, we need a network stack. A network stack is the implementation of networking protocols inside a device's operating system (and sometimes firmware/hardware) that allows a device to understand, send, and receive data over a network. We have models like the OSI and TCP/IP model that group these protocols into layers, which shows a theoretical and practical view (depending on which model you use) of how these layers operate.
 
 Now, we have a network of devices on our LAN that can communicate with each other through a network stack. As these devices send and receive data over the network, they generate various types of traffic, including inbound, outbound, and broadcast traffic. Therefore, the exchange of data (the act of data moving among multiple devices on the network) is called network traffic.
 
