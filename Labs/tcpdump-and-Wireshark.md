@@ -23,50 +23,58 @@ First, power on the Kali Linux and Meta machines. Sign in to both.
 
 Next, open a terminal on the Kali Linux machine.
 
-When dealing with any command, you might occasionally need help understanding the command's purpose and how it operates. To find answers, try using the Internet with specialized sites, such as Explain Shell, which can help you analyze commands and understand how they work. Alternatively, if you prefer to stay within the terminal, you can use the 'man' and 'help' commands.  
+<img width="1752" height="960" alt="vmware_VkWxUoMsb1" src="https://github.com/user-attachments/assets/b72e8a5e-8b6a-4700-8939-39fcb7bb9af0" />
+
+When dealing with any command, you might occasionally need help understanding the command's purpose and how it operates. To find answers you can use specialized sites, such as Explain Shell, which can help you analyze commands to understand how they work. Alternatively, if you prefer to stay within the terminal, you can use the `man` and `help` commands.  
 
 Linux categorizes its commands into four main types: external commands, shell built-ins, functions, and keywords. In this lab, we will focus only on external and shell built-in commands.
 
-If we look at the ‘man’ command, it falls into the external command category. Why? That is because most commands are actual programs stored as binaries or scripts on disk, rather than being built into the shell. Typically in directories like /bin, /usr/bin, or /usr/local/bin. You can confirm that man is indeed a program by executing ￼the command " man which will output the absolute path of the executable file. When executed, the man command works by looking up formatted manual pages stored under /usr/share/man/.
+If we look at the `man` command, it falls into the external command category. Why? That's because most commands are actual programs stored as binaries or scripts on disk, rather than being built into the shell. Typically in directories like /bin, /usr/bin, or /usr/local/bin. You can confirm that man is indeed a program by executing the command `which man` which will output the absolute path of the executable file. 
 
-The help command, on the other hand, functions as a shell built-in because the command is built directly into the shell (interpreter). You don’t need to search the file system, as the shell’s processes can execute the command code directly. Shell built-ins control various aspects of the shell, including navigation, environment, shell control, and utilities. The purpose of the help command is to display information solely about shell built-ins.
+<img width="219" height="61" alt="vmware_1AFFTq6Mxc" src="https://github.com/user-attachments/assets/1d005716-d079-4a08-8e10-71ac6f1ba229" />
 
-For commands that are not shell built-ins, there is a help variant known as double-dash help, which provides quick assistance on external programs. The program that the option applies to implements this command-line option.
+When executed, the `man` command works by looking up formatted manual pages stored under /usr/share/man/.
 
-Our next task in this lab will be to run both of these commands. First, let’s run ‘man tcpdump’ and examine the output.
+The `help` command, on the other hand, functions as a shell built-in because the command is built directly into the shell (interpreter). You don’t need to search the file system, as the shell’s processes can execute the command code directly. Shell built-ins control various aspects of the shell, including navigation, environment, shell control, and utilities. The purpose of the `help` command is to display information solely about shell built-ins.
 
-**PHOTO**
+For commands that are not shell built-ins, there is a help variant known as `--help`, which provides quick assistance for external programs.
+
+Our next task in this lab will be to run both of these commands. First, let’s run `man tcpdump` and examine the output.
+
+![vmware_MKbbQYTdRm](https://github.com/user-attachments/assets/16e8aaca-ae8d-4fb3-aa4d-2e2e517587e1)
 
 Running the command above will output tcpdumps manual page. The page will display various sections, including a synopsis of the options relevant to the command, a description of the command, and a detailed options section where each option is defined.
 
 Press *q* to quit.
 
-Now, let’s try running the - - help option against the tcpdump command. tcpdump - -help
+Now, let’s try running the `--help` option against the tcpdump command. Run `tcpdump --help`.
 
-**PHOTO**
+<img width="617" height="220" alt="vmware_hSg3xqU9Su" src="https://github.com/user-attachments/assets/1f2ce2c2-dc33-4075-a901-8ed8628384d3" />
 
 You will get a usage output for the various options tcpdump uses.
 
 ## tcpdump Lab
 The first tool that we will be working with in this lab is tcpdump, so let's start there.
 
-If you recall, tcpdump works by capturing network traffic from the network interface card. To see what interfaces are available for traffic capture run the following command: tcpdump -D
+If you recall, tcpdump works by capturing network traffic from the network interface card. To see what interfaces are available for traffic capture, run the following command: `tcpdump -D`
 
 The system prints a list of available network interfaces from which tcpdump can capture packets.
 
-**PHOTO**
+<img width="520" height="169" alt="vmware_YsIDSlQL4Z" src="https://github.com/user-attachments/assets/f3f8c83f-38c8-4b1b-ae0c-1440dd18c5f9" />
 
-For this lab, we will be working with eth0, which is the first interface listed in the output. Let’s clear the screen.
+For this lab, we will be working with eth0, which is the first interface listed in the output. Clear the screen.
 
-Now we will begin to capture network traffic from the eth0 interface by entering the following command: sudo tcpdump -i eth0
+Now we will begin to capture network traffic from the eth0 interface by entering the following command: `sudo tcpdump -i eth0`
 
 With this command, we instruct the shell to run tcpdump with elevated privileges to capture any network traffic that passes through the eth0 interface.
 
 After we enter the kali user's password, tcpdump will begin capturing eth0 network traffic.
 
-Let's start to generate some traffic by opening another terminal and pinging Google: ping google.com
+<img width="220" height="65" alt="vmware_yxN8zIZ2AC" src="https://github.com/user-attachments/assets/6202ce02-e1d3-43d2-9116-c88ba0ae9077" />
 
-As you can see, the ICMP Echo Request and Reply packets sent to and received from Google by the second terminal are being captured by tcpdump in the first terminal. 
+Let's start to generate some traffic by opening another terminal and pinging Google: `ping google.com`
+
+As you can see, the ICMP Echo Request and Reply packets that were sent to and received from Google by the second terminal are being captured by tcpdump in the first terminal. 
 
 Press Ctrl+C to stop the ping.
 
