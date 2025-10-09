@@ -19,9 +19,9 @@ Continuing on with this scenario, now that traffic being generated, a packet ana
 When looking at tcpdump and Wireshark side by side, the main difference between the two is that tcpdump is command-line-based while WireShark is GUI-based. Because of this, tcpdump is text only and therefore more lightweight than Wireshark, which is graphical and thus heavier on system resources. A good rule of thumb is to be knowledgeable in both, as you never know which tool you may have to use in the field.
 
 ## man and Shell Built-ins
-First, power on the Kali Linux and Meta machines and sign in to both.
+First, power on the Kali Linux and Meta machines. Sign in to both.
 
-Open a terminal on the Kali Linux machine.
+Next, open a terminal on the Kali Linux machine.
 
 When dealing with any command, you might occasionally need help understanding the command's purpose and how it operates. To find answers, try using the Internet with specialized sites, such as Explain Shell, which can help you analyze commands and understand how they work. Alternatively, if you prefer to stay within the terminal, you can use the 'man' and 'help' commands.  
 
