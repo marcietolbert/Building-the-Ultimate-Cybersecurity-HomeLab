@@ -16,7 +16,7 @@ We now have a network of devices on our LAN that can communicate with each other
 
 Continuing on with this scenario, now that traffic being generated, a packet analyzer can be used to capture any data that crosses a device's network interface. The analyzer will then inspect and decode these packets across multiple network stack layers. Some of the things a network packet analyzer will allow you to do include: capture and filter traffic, decode protocols, reconstruct sessions, troubleshoot network issues, and identify security problems. All while presenting the information in a human-readable format.
 
-When looking at tcpdump and Wireshark side by side, the main difference between the two is that tcpdump is a command-line-based while WireShark is GUI-based. Because of this, tcpdump is text only and therefore more lightweight than Wireshark, which is graphical and thus heavier on system resources. A good rule of thumb is to be knowledgeable in both, as you never know which tool you may have to use in the field.
+When looking at tcpdump and Wireshark side by side, the main difference between the two is that tcpdump is command-line-based while WireShark is GUI-based. Because of this, tcpdump is text only and therefore more lightweight than Wireshark, which is graphical and thus heavier on system resources. A good rule of thumb is to be knowledgeable in both, as you never know which tool you may have to use in the field.
 
 ## man and Shell Built-ins
 First, power on the Kali Linux and Meta machines and sign in to both.
