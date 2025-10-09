@@ -6,7 +6,7 @@ First on our agenda is a review of tcpdump and Wireshark, highlighting their sim
 ## tcpdump vs Wireshark: A Head-to-Head Comparison 
 Let's break down how tcpdump and Wireshark function.
 
-Three key elements are required for a network packet analyzer to analyze network packets: a network, a network stack, and network traffic. 
+Three key elements are required for a network packet analyzer to analyze packets: a network, a network stack, and network traffic. 
 
 When two or more devices are connected together a LAN (Local Area Network) is formed, giving the devices the ability to exchange data and share resources. This means that all of the connected devices in your home are part of your local area network. Please note that the size of a LAN is generally limited to a specific area, such as a home, a single floor, or an office building.
 
