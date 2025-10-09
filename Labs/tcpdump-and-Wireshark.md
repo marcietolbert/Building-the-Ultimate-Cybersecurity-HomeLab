@@ -4,7 +4,7 @@ Welcome back to Lab Two in the **Building the Ultimate Cybersecurity Homelab** s
 First on our agenda is a review of tcpdump and Wireshark, highlighting their similarities, differences, and use cases.
 
 ## tcpdump vs Wireshark: A Head-to-Head Comparison 
-Let's break down how tcpdump and Wireshark function in terms of the data they collect.
+Let's break down how tcpdump and Wireshark function.
 
 Three key elements are required for a network packet analyzer to analyze network packets: a network, a network stack, and network traffic. 
 
