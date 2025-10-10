@@ -54,7 +54,7 @@ Now, let’s try running the `--help` option against the tcpdump command. Run `t
 You will get a usage output for the various options tcpdump uses.
 
 ## tcpdump Lab
-The first tool that we will be working with in this lab is tcpdump, so let's start there.
+The first tool that we will be working with in this lab is tcpdump.
 
 If you recall, tcpdump works by capturing network traffic from the network interface card. To see what interfaces are available for traffic capture, run the following command: `tcpdump -D`
 
@@ -62,49 +62,72 @@ The system prints a list of available network interfaces from which tcpdump can 
 
 <img width="520" height="169" alt="vmware_YsIDSlQL4Z" src="https://github.com/user-attachments/assets/f3f8c83f-38c8-4b1b-ae0c-1440dd18c5f9" />
 
-For this lab, we will be working with eth0, which is the first interface listed in the output. Clear the screen.
+For this lab, we will be working with eth0, which is the first interface listed in the output. 
+
+Clear the screen.
 
 Now we will begin to capture network traffic from the eth0 interface by entering the following command: `sudo tcpdump -i eth0`
+
+<img width="220" height="65" alt="vmware_yxN8zIZ2AC" src="https://github.com/user-attachments/assets/d64395fe-f241-4b5f-9d29-8b06875d5208" />
 
 With this command, we instruct the shell to run tcpdump with elevated privileges to capture any network traffic that passes through the eth0 interface.
 
 After we enter the kali user's password, tcpdump will begin capturing eth0 network traffic.
 
-<img width="220" height="65" alt="vmware_yxN8zIZ2AC" src="https://github.com/user-attachments/assets/6202ce02-e1d3-43d2-9116-c88ba0ae9077" />
+![vmware_0W8c2ZanwK](https://github.com/user-attachments/assets/2e41530f-a3c1-4119-a61e-181db9db9ade)
 
 Let's start to generate some traffic by opening another terminal and pinging Google: `ping google.com`
 
-As you can see, the ICMP Echo Request and Reply packets that were sent to and received from Google by the second terminal are being captured by tcpdump in the first terminal. 
+<img width="551" height="527" alt="vmware_uYX9cxJZNg" src="https://github.com/user-attachments/assets/bbec5a9f-33f2-4d12-9447-f6d1cfa8185c" />
 
-Press Ctrl+C to stop the ping.
+As you can see, the ICMP Echo Request and Reply packets that were sent and recieved by the second terminal are being captured by tcpdump in the first terminal. 
 
-Let's examine one of the lines from the conversation that occurred between our endpoint and the Google server we contacted. The line contains several fields arranged from left to right: timestamp, source IP, destination, protocol used, message type, and flags.
+Press *Ctrl+C* to stop the ping.
 
-Choose any line that shows an IMCP Echo Request as the protocol used (that would be our endpoint). Underneath that, on the following line, you should see the IMCP Echo Response protocol and the message type being used by the Google server to respond to our endpoint.
+If we examine one of the lines from the conversation that occurred between our endpoint and the Google server we contacted we will several fields (left to right): timestamp, source IP, destination, protocol used, message type, flags, and length.
 
-Clear the screen
+Choose any line that shows an ICMP Echo Request as the protocol used (that would be our endpoint). Underneath that, on the following line, you should see the ICMP Echo Response protocol and the message type being used by the Google server to respond to our endpoint.
+
+![vmware_BFvUuEymD0](https://github.com/user-attachments/assets/d4e3cb21-55e0-42e8-959a-8986fe3d9766)
+
+Clear the screen for both terminals.
 
 Now that we have run a fairly basic scan, let’s try a capture that provides a more detailed output.
 
-Run the following command:  sudo tcpdump -i eth0 -XA
+Run the following command in the first terminal:  `sudo tcpdump -i eth0 -XA`
+
+<img width="253" height="66" alt="vmware_YSAWVPq7i5" src="https://github.com/user-attachments/assets/e3116019-3a2f-4366-9e21-4554035051d6" />
 
 The new command we are running keeps the exact requests from the first command and also prints the hex and ASCII representations of each packet, excluding the link-level header (Layer 2, according to the OSI model).
 
-Now that we've defined the new capture we want to run, let's generate some traffic again: from the second terminal, ping the Meta machine: ping 10.0.0.11.
+we've defined the new capture we want to run, let's generate some traffic again. Ping the Meta machine from the second terminal: `ping 10.0.0.11`.
 
-After letting the ping run for a few seconds, stop it using Ctrl+C
+<img width="650" height="402" alt="vmware_lGScqpSAUq" src="https://github.com/user-attachments/assets/653b2fc2-db69-4daa-a16e-033180f0683f" />
 
-Let’s now look back at the first terminal for our tcpdump capture. Then scroll up to the start of the capture.
+After letting the ping run for a few seconds, stop it using *Ctrl+C*.
 
-If we examine the first line of the first packet, we see that it presents the same type of information as the first capture. However, take a look at the second line of the packet. This line marks the start of the hex and ASCII information we requested with the -Xa option used at the end of the command we ran.
+Let’s now look back at the first terminal at our tcpdump capture.
 
-Hexadecimal (hex) is a numbering system with a base of 16 that uses **0–9** and **A–F**. ASCII (**American Standard Code for Information Interchange**), on the other hand, is a character encoding standard that maps numbers to letters, digits, symbols, and control characters. The packet carries its payload—the content being delivered—in hex and ASCII values. Specifically, ￼hex is a representation of raw packet bytes while the ASCII is an interpretation of those bytes as characters (when printable).
+![vmware_PGyAxJBbjF](https://github.com/user-attachments/assets/f3dc099b-2eb6-429d-b97c-6f8840fac465)
+
+Locate the start of the capture for ping to the Meta machine.
+
+If we examine the first line of the first packet, we see the same information we saw in the first capture. However, take a look at the second line of the packet. This line marks the start of the hex and ASCII information we requested with the -XA option used at the end of the command we ran.
+
+<img width="715" height="34" alt="vmware_kbyR6cUFP2" src="https://github.com/user-attachments/assets/38b4b540-3cff-4c3b-8b6e-b3f433546cbe" />
+<br>
+<br>
+<img width="752" height="118" alt="vmware_BuE79lO3x0" src="https://github.com/user-attachments/assets/035e8496-fe8a-4195-b443-14e843b1b372" />
+
+Hexadecimal (hex) is a numbering system with a base of 16 that uses **0–9** and **A–F**. ASCII (**American Standard Code for Information Interchange**), on the other hand, is a character encoding standard that maps numbers to letters, digits, symbols, and control characters. The packet carries its payload (the content being delivered) in hex and ASCII values. In a packet hex is a representation of raw packet bytes while ASCII is an interpretation of those bytes as characters (when printable).
 
 In the first packet, our endpoint (10.0.0.11) is reaching out to or pinging (using ICMP) the Meta machine (10.0.0.1) to check if the machine is in an up state and able to converse by sending an Echo Request message. The hex and ASCII values we see indicate the payload (content delivered) to the Meta machine. Since the hexadecimal view of the payload is not human-readable, we need to examine the ASCII view, which displays a payload of 01234567.
 
 Let’s now look for an Echo Reply message (response) from the Meta machine. 
 
 The Echo Reply message below is the response from the Meta machine, echoing back the contents of the initial payload sent by our endpoint. This reply message confirms that the Meta machine is in an up state and ready to converse.
+
+<img width="714" height="117" alt="vmware_6kDUjhLDIX" src="https://github.com/user-attachments/assets/2e271ce2-3882-4d23-80ae-0b71cafe9297" />
 
 ## Netcat
 Now, before we jump into Wireshark, we are next tasked with exploring netcat, so let’s take a bit of a detour. Netcat, sometimes referred to as the Swiss Army knife of networking, serves as a versatile command-line utility that performs various network tasks, including creating and listening for connections, port scanning, data transfer, and more. For this lab, we will be using netcat to create and listen for connections.
