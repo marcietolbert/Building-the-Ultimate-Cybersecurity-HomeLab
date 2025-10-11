@@ -110,7 +110,7 @@ Let’s now look back to the first terminal for the tcpdump capture.
 
 ![vmware_PGyAxJBbjF](https://github.com/user-attachments/assets/f3dc099b-2eb6-429d-b97c-6f8840fac465)
 
-Locate the start of the capture for ping to the Meta machine.
+Locate the start of the ping to the Meta machine in the capture.
 
 If we examine the first line of the first packet, we see the same information we saw in the first capture. However, take a look at the second line of the packet. This line marks the start of the hex and ASCII information we requested with the -XA option used at the end of the command we ran.
 
