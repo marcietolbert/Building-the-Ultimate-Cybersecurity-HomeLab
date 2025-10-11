@@ -114,10 +114,10 @@ Locate the start of the ping to the Meta machine in the capture.
 
 If we examine the first line of the first packet, we see the same information we saw in the first capture. However, take a look at the second line of the packet. This line marks the start of the hex and ASCII information we requested with the -XA option used at the end of the command we ran.
 
-<img width="715" height="34" alt="vmware_kbyR6cUFP2" src="https://github.com/user-attachments/assets/38b4b540-3cff-4c3b-8b6e-b3f433546cbe" />
+<img width="715" height="34" alt="dTP8POvZwF" src="https://github.com/user-attachments/assets/68dc7c03-b890-4ed8-845c-b754f1288d7e" />
 <br>
 <br>
-<img width="726" height="116" alt="vmware_tavrKEtQKS" src="https://github.com/user-attachments/assets/4d31fb54-eee5-4246-b450-f1b612e0a741" />
+<img width="726" height="116" alt="IUtwlbBzZj" src="https://github.com/user-attachments/assets/a0f8d575-217f-44e0-b1e7-1d81e59c2816" />
 
 Hexadecimal (hex) is a numbering system with a base of 16 that uses **0–9** and **A–F**. ASCII (**American Standard Code for Information Interchange**), on the other hand, is a character encoding standard that maps numbers to letters, digits, symbols, and control characters. The packet carries its payload (the content being delivered) in hex and ASCII values. In a packet hex is a representation of raw packet bytes while ASCII is an interpretation of those bytes as characters (when printable).
 
