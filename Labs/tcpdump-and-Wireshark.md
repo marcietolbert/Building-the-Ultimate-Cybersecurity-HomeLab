@@ -25,7 +25,7 @@ Next, open a terminal on the Kali Linux machine.
 
 <img width="1752" height="960" alt="vmware_VkWxUoMsb1" src="https://github.com/user-attachments/assets/b72e8a5e-8b6a-4700-8939-39fcb7bb9af0" />
 
-When dealing with any command, you might occasionally need help understanding the command's purpose and how it operates. To find answers you can use specialized sites, such as Explain Shell, which can help you analyze commands to understand how they work. Alternatively, if you prefer to stay within the terminal, you can use the `man` and `help` commands.  
+When dealing with any command, you might occasionally need help understanding the command's purpose and how it operates. To find answers you can use specialized sites, such as <a href="https://www.explainshell.com/">Explainshell</a>, which can help you analyze commands to understand how they work. Alternatively, if you prefer to stay within the terminal, you can use the `man` and `help` commands.  
 
 Linux categorizes its commands into four main types: external commands, shell built-ins, functions, and keywords. In this lab, we will focus only on external and shell built-in commands.
 
