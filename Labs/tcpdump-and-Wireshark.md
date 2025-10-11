@@ -88,7 +88,7 @@ If we examine one of the lines from the conversation that occurred between our e
 
 Choose any line that shows an ICMP Echo Request as the protocol used (that would be our endpoint). Underneath that, on the following line, you should see the ICMP Echo Response protocol and the message type being used by the Google server to respond to our endpoint.
 
-![vmware_BFvUuEymD0](https://github.com/user-attachments/assets/d4e3cb21-55e0-42e8-959a-8986fe3d9766)
+![fSgzfW0E53](https://github.com/user-attachments/assets/9f235945-6f86-44b1-865d-b18f6d527913)
 
 Clear the screen for both terminals.
 
