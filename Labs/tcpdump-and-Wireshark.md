@@ -121,7 +121,7 @@ If we examine the first line of the first packet, we see the same information we
 
 Hexadecimal (hex) is a numbering system with a base of 16 that uses **0–9** and **A–F**. ASCII (**American Standard Code for Information Interchange**), on the other hand, is a character encoding standard that maps numbers to letters, digits, symbols, and control characters. The packet carries its payload (the content being delivered) in hex and ASCII values. In a packet, hex is a representation of raw packet bytes while ASCII is an interpretation of those bytes as characters (when printable).
 
-In the first packet, our endpoint (10.0.0.11) is reaching out to or pinging (using ICMP) the Meta machine (10.0.0.1) to check if the machine is in an up state and able to converse by sending an Echo Request message. The hex and ASCII values we see indicate the payload (content delivered) to the Meta machine. Since the hexadecimal view of the payload is not human-readable, we need to examine the ASCII view, which displays a payload of 01234567.
+In the first packet, our endpoint (10.0.0.10) is reaching out to or pinging (using ICMP) the Meta machine (10.0.0.11) to check if the machine is in an up state and able to converse by sending an Echo Request message. The hex and ASCII values we see indicate the payload (content delivered) to the Meta machine. Since the hexadecimal view of the payload is not human-readable, we need to examine the ASCII view, which displays a payload of 01234567.
 
 <img width="726" height="116" alt="S2R1H1WE0l" src="https://github.com/user-attachments/assets/6daeeba0-a1a8-4df5-ae1a-f5ef437a6c98" />
 
