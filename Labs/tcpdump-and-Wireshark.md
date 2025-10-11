@@ -100,7 +100,7 @@ Run the following command in the first terminal:  `sudo tcpdump -i eth0 -XA`
 
 The new command we are running keeps the exact requests from the first command and also prints the hex and ASCII representations of each packet, excluding the link-level header (Layer 2, according to the OSI model).
 
-we've defined the new capture we want to run, let's generate some traffic again. Ping the Meta machine from the second terminal: `ping 10.0.0.11`.
+We've defined the new capture we want to run, let's generate some traffic again. Ping the Meta machine from the second terminal: `ping 10.0.0.11`.
 
 <img width="650" height="402" alt="vmware_lGScqpSAUq" src="https://github.com/user-attachments/assets/653b2fc2-db69-4daa-a16e-033180f0683f" />
 
