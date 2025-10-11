@@ -129,7 +129,7 @@ Let’s now look for an Echo Reply message (response) from the Meta machine.
 
 The Echo Reply message below is the response from the Meta machine, echoing back the contents of the initial payload sent by our endpoint. This reply message confirms that the Meta machine is in an up state and ready to converse.
 
-<img width="714" height="117" alt="vmware_6kDUjhLDIX" src="https://github.com/user-attachments/assets/2e271ce2-3882-4d23-80ae-0b71cafe9297" />
+<img width="726" height="116" alt="TGLhfRRf25" src="https://github.com/user-attachments/assets/1ff06772-2955-4d7d-b41d-ea33c775192f" />
 
 ## Netcat
 Now, before we jump into Wireshark, we are next tasked with exploring netcat, so let’s take a bit of a detour. Netcat, sometimes referred to as the Swiss Army knife of networking, serves as a versatile command-line utility that performs various network tasks, including creating and listening for connections, port scanning, data transfer, and more. For this lab, we will be using netcat to create and listen for connections.
