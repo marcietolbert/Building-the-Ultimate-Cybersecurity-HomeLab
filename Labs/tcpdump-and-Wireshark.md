@@ -106,7 +106,7 @@ We've defined the new capture we want to run, let's generate some traffic again.
 
 After letting the ping run for a few seconds, stop it using *Ctrl+C*.
 
-Let’s now look back at the first terminal at our tcpdump capture.
+Let’s now look back to the first terminal for the tcpdump capture.
 
 ![vmware_PGyAxJBbjF](https://github.com/user-attachments/assets/f3dc099b-2eb6-429d-b97c-6f8840fac465)
 
