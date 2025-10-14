@@ -132,35 +132,52 @@ The Echo Reply message below is the response from the Meta machine, echoing back
 <img width="726" height="116" alt="TGLhfRRf25" src="https://github.com/user-attachments/assets/1ff06772-2955-4d7d-b41d-ea33c775192f" />
 
 ## Netcat
-Now, before we jump into Wireshark, we are next tasked with exploring Netcat, so let’s take a bit of a detour. Netcat, sometimes referred to as the Swiss Army Knife of networking, serves as a versatile command-line utility. It can perform various networking tasks that includes: creating and listening for connections, port scanning, data transfer, and more. For this lab, we will be using Netcat to create and listen for connections.
+Now, before we jump into Wireshark, we are next tasked with exploring Netcat, so let’s take a bit of a detour. Netcat, sometimes referred to as the Swiss Army Knife of networking, serves as a versatile command-line utility. It can perform various networking tasks including: creating and listening for connections, port scanning, data transfer, and more. For this lab, we will be using Netcat to create and listen for connections.
 
 As instructed, the first thing we will do is open three terminals. We already have two, so make sure those terminals have been cleared for a clean slate, and then open a third terminal. 
 
+<img width="1752" height="960" alt="vmware_3NBX2gu6vP" src="https://github.com/user-attachments/assets/b2ed80ba-8a56-41d4-bd48-80762f6f3e41" />
+
 In the first terminal, we will use tcpdump to capture the traffic taking place over the network interface; however, we will capture traffic over the lo (loopback) interface instead of the eth0 interface.
 
-Run the following command: sudo tcpdump -i lo -XA
+Run the following command: `sudo tcpdump -i lo -XA`
 
-Next, we need to create a netcat listener on the second terminal. To do that, we need to open a port for our listener to connect to. In our second terminal run the following command: nc -l -p 4444
+<img width="538" height="78" alt="vmware_UQuJEOoHxc" src="https://github.com/user-attachments/assets/0ad65353-e59a-4dc6-a06a-2d3037154eb1" />
 
-This command instructs our shell to use netcat as a server, operating in listening mode (-l) and binding the listener to port 4444. The netcat listener will now be listening on port 4444.
+Next, we need to create a netcat listener on the second terminal. To do that, we need to open a port for our listener to connect to. In our second terminal run the following command: `nc -l -p 4444`
 
-Now run the following command in the third terminal: nc 127.0.0.1 4444
+<img width="687" height="443" alt="0HvAGpqZYo" src="https://github.com/user-attachments/assets/0be0e6fc-ab02-4787-adfc-7eaeff113a50" />
 
-The command we just ran is telling the shell to use netcat to **open a TCP connection to port 4444 on the local machine (127.0.0.1)**.
+This command instructs our shell to use Netcat as a server, operating in listening mode (-l) and binding the listener to port 4444. The netcat listener will now be listening on port 4444.
+
+Now run the following command in the third terminal: `nc 127.0.0.1 4444`
+
+<img width="586" height="329" alt="hNM3cjAA46" src="https://github.com/user-attachments/assets/02b6a11c-798f-45a4-ab5f-389921217035" />
+
+The command we just ran is telling the shell to use netcat to open a TCP connection to port 4444 on the local machine (127.0.0.1).
 
 We have now established an active connection between the second and third terminal.
 
-Now, using either terminal, you can send messages back and forth between the two. Try it now by sending three to four messages from Terminal 2 to Terminal 3. Whatever you type into the second terminal should appear in the third terminal.
+Now, using either terminal, you can send messages back and forth between the two. Try it now by sending three to four messages back and forth between Terminal 2 and Terminal 3. Whatever you type into the second terminal should appear in the third terminal and vice versa.
 
-So, if we were to pretend our simulated lab were a real-world scenario￼, then Terminal Two would be our attack machine, where we would set up our listener and, using some payload, send it to our victim machine to compromise the machine and force it to connect back to the attacker’s listening machine.
+<img width="686" height="443" alt="NPUA8gWJKd" src="https://github.com/user-attachments/assets/a398e9ae-60ca-451f-be12-33725556897d" />
+<br>
+<br>
+<img width="693" height="466" alt="5m8EHlgNM7" src="https://github.com/user-attachments/assets/a0715073-ed36-4cd4-8414-9f99ed825c70" />
+<br>
+<br>
+
+So, if we were to pretend our simulated lab were a real-world scenario, then Terminal Two would be our attack machine, where we would set up our listener and, using some payload, send it to our victim machine to compromise the machine and force it to connect back to the attacker’s listening machine.
 
 Let’s jump back to our tcpdump capture to see what it logged.
 
-Scroll through the packet captures to locate the first message you sent in the ASCII view. As you continue, you can follow the subsequent messages sent to Terminal 3.
+Scroll through the packet capture to locate the first message you sent in the ASCII view. As you continue, you can follow the subsequent messages sent back and forth between Terminal 2 and Terminal 3.
 
-Stop the capture: Ctrl+C
+![Ihcp52Olb8](https://github.com/user-attachments/assets/e85e4046-9578-40c8-ac23-2db5fd951491)
 
-Clear the screen: clear
+Press *Ctrl+C* to stop the capture.
+
+Clear the screen.
 
 Now, let’s look at how to write tcpdump captures to a file. Run the following command. sudo tcpdump -i eth0 -w wakanda.pcap
 
