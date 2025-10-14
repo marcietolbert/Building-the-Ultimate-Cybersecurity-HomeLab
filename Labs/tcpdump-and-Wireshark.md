@@ -160,7 +160,7 @@ We have now established an active connection between the second and third termin
 
 Now, using either terminal, you can send messages back and forth between the two. Try it now by sending three to four messages back and forth between Terminal 2 and Terminal 3. Whatever you type into the second terminal should appear in the third terminal and vice versa.
 
-<img width="686" height="443" alt="NPUA8gWJKd" src="https://github.com/user-attachments/assets/a398e9ae-60ca-451f-be12-33725556897d" />
+<img width="686" height="443" alt="xpYKFWgTKr" src="https://github.com/user-attachments/assets/dc00296f-8ea7-4bef-809a-248a4f9a925c" />
 <br>
 <br>
 <img width="693" height="466" alt="5m8EHlgNM7" src="https://github.com/user-attachments/assets/a0715073-ed36-4cd4-8414-9f99ed825c70" />
