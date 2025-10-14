@@ -179,25 +179,25 @@ Press *Ctrl+C* to stop the capture.
 
 Clear the screen.
 
-Now, let’s look at how to write tcpdump captures to a file. Run the following command. sudo tcpdump -i eth0 -w wakanda.pcap
+Now, let’s look at how to write tcpdump captures to a file. Run the following command: `sudo tcpdump -i eth0 -w firstcapture.pcap`
 
-This command instructs the shell to run a tcpdump capture with elevated privileges on the eth0 interface and to write the capture to a file named wakanda.pcap. 
+This command instructs the shell to run a tcpdump capture with elevated privileges on the eth0 interface and write the capture to a file named firstcapture.pcap. 
 
 To test this, pull up Terminal 2 or 3 and send a few more messages to the other terminal.
 
-Then, terminate the connection to the other terminal using Ctrl+C
+Then, terminate the connection to the other terminal using *Ctrl+C*.
 
-Close the third terminal, clear the screen on the second terminal, and then run the following command to ping the Meta machine: ping 10.0.0.11
+Close the third terminal, clear the screen on the second terminal, and then run the following command to ping the Meta machine: `ping 10.0.0.11`
 
-Now, let’s run the following command to help generate more network traffic for our capture: ' ftp 10.0.0.11'.
+Now, let’s run the following command to help generate more network traffic for our capture: `ftp 10.0.0.11`
 
-Log in to the Meta machine with the mfsadmin credentials 
+Log in to the Meta machine with the mfsadmin credentials. 
 
-Close the terminal window, then stop the TCPdump capture currently running in the first terminal using Ctrl+C.
+Close the terminal window, then stop the TCPdump capture currently running in the first terminal using *Ctrl+C*.
 
-Now, if we run the 'ls' command, we can see that we have a wakanda.pcap file in our current working directory.
+Now, if we run the `ls` command, we can see that we have a firstcapture.pcap file in our current working directory.
 
-To read the capture, run the following command: sudo tcpdump -r wakanda.pcap. Using the -r option allows us to read the pcap file.
+To read the capture, run the following command: `sudo tcpdump -r firstcapture.pcap` Using the -r option allows us to read the pcap file.
 
 You can also run the -XA options against the file to view both the hex and ASCII representations.
 
