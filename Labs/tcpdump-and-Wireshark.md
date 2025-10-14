@@ -31,7 +31,7 @@ Linux categorizes its commands into four main types: external commands, shell bu
 
 If we look at the `man` command, it falls into the external command category. Why? That's because most commands are actual programs stored as binaries or scripts on disk, rather than being built into the shell. Typically in directories like /bin, /usr/bin, or /usr/local/bin. You can confirm that man is indeed a program by executing the command `which man` which will output the absolute path of the executable file. 
 
-<img width="219" height="61" alt="vmware_1AFFTq6Mxc" src="https://github.com/user-attachments/assets/1d005716-d079-4a08-8e10-71ac6f1ba229" />
+<img width="219" height="61" alt="yYUrUK9AJb" src="https://github.com/user-attachments/assets/3687cf72-f779-41d4-a0a7-885578726946" />
 
 When executed, the `man` command works by looking up formatted manual pages stored under /usr/share/man/.
 
@@ -49,7 +49,7 @@ Press *q* to quit.
 
 Now, let’s try running the `--help` option against the tcpdump command. Run `tcpdump --help`.
 
-<img width="617" height="220" alt="vmware_hSg3xqU9Su" src="https://github.com/user-attachments/assets/1f2ce2c2-dc33-4075-a901-8ed8628384d3" />
+<img width="617" height="220" alt="6lSc243HRD" src="https://github.com/user-attachments/assets/d520d1c6-ab29-4311-92c8-0e617484037f" />
 
 You will get a usage output for the various options tcpdump uses.
 
