@@ -60,7 +60,7 @@ If you recall, tcpdump works by capturing network traffic from the network inter
 
 The system prints a list of available network interfaces from which tcpdump can capture packets.
 
-<img width="520" height="169" alt="vmware_YsIDSlQL4Z" src="https://github.com/user-attachments/assets/f3f8c83f-38c8-4b1b-ae0c-1440dd18c5f9" />
+<img width="520" height="169" alt="5pSwK9TpzV" src="https://github.com/user-attachments/assets/0e0d1309-b694-4ab1-9ef4-5cd255d0ebb5" />
 
 For this lab, we will be working with eth0, which is the first interface listed in the output. 
 
@@ -68,17 +68,17 @@ Clear the screen.
 
 Now we will begin to capture network traffic from the eth0 interface by entering the following command: `sudo tcpdump -i eth0`
 
-<img width="220" height="65" alt="vmware_yxN8zIZ2AC" src="https://github.com/user-attachments/assets/d64395fe-f241-4b5f-9d29-8b06875d5208" />
+<img width="220" height="65" alt="hFyocayZUP" src="https://github.com/user-attachments/assets/69098514-1475-4071-aae5-aeab870e26c2" />
 
 With this command, we instruct the shell to run tcpdump with elevated privileges to capture any network traffic that passes through the eth0 interface.
 
 After we enter the kali user's password, tcpdump will begin capturing eth0 network traffic.
 
-![vmware_0W8c2ZanwK](https://github.com/user-attachments/assets/2e41530f-a3c1-4119-a61e-181db9db9ade)
+![GxlJKKldub](https://github.com/user-attachments/assets/d47dbd64-1280-4986-852d-ede9fe2cfdc2)
 
 Let's start to generate some traffic by opening another terminal and pinging Google: `ping google.com`
 
-<img width="551" height="527" alt="vmware_uYX9cxJZNg" src="https://github.com/user-attachments/assets/bbec5a9f-33f2-4d12-9447-f6d1cfa8185c" />
+<img width="551" height="527" alt="M1KLGdCNjL" src="https://github.com/user-attachments/assets/118a0ac5-9a4c-4137-a5b3-74ca8183179c" />
 
 As you can see, the ICMP Echo Request and Reply packets that were sent and recieved by the second terminal are being captured by tcpdump in the first terminal. 
 
@@ -88,7 +88,7 @@ If we examine one of the lines from the conversation that occurred between our e
 
 Choose any line that shows an ICMP Echo Request as the protocol used (that would be our endpoint). Underneath that, on the following line, you should see the ICMP Echo Response protocol and the message type being used by the Google server to respond to our endpoint.
 
-![fSgzfW0E53](https://github.com/user-attachments/assets/9f235945-6f86-44b1-865d-b18f6d527913)
+![aPRmYlRxB3](https://github.com/user-attachments/assets/1b253e9f-7534-449d-a538-d71966281339)
 
 Clear the screen for both terminals.
 
@@ -96,13 +96,13 @@ Now that we have run a fairly basic scan, let’s try a capture that provides a 
 
 Run the following command in the first terminal:  `sudo tcpdump -i eth0 -XA`
 
-<img width="253" height="66" alt="vmware_YSAWVPq7i5" src="https://github.com/user-attachments/assets/e3116019-3a2f-4366-9e21-4554035051d6" />
+<img width="253" height="66" alt="XEx98jb92y" src="https://github.com/user-attachments/assets/83a4a8a3-758f-4b2c-9c2c-b9b1349b998f" />
 
 The new command we are running keeps the exact requests from the first command and also prints the hex and ASCII representations of each packet, excluding the link-level header (Layer 2, according to the OSI model).
 
 We've defined the new capture we want to run, let's generate some traffic again. Ping the Meta machine from the second terminal: `ping 10.0.0.11`.
 
-<img width="650" height="402" alt="vmware_lGScqpSAUq" src="https://github.com/user-attachments/assets/653b2fc2-db69-4daa-a16e-033180f0683f" />
+<img width="650" height="402" alt="lsGz35lW3C" src="https://github.com/user-attachments/assets/fe4c703d-9660-44d3-ba2a-c799c6db305c" />
 
 After letting the ping run for a few seconds, stop it using *Ctrl+C*.
 
