@@ -232,30 +232,54 @@ Click the Kali logo in the upper left corner and search for Wireshark.
 
 Let’s start capturing traffic on the eth0 interface just as we did in tcpdump by double-clicking the eth0 interface.
 
-Start generating network traffic by opening the terminal and pinging the Meta machine four times using the following command: ping -c 4 10.0.0.11.
+<img width="642" height="481" alt="wfXu9JMWVm" src="https://github.com/user-attachments/assets/228dd72f-bb5e-4766-a56a-551b6444024a" />
+
+Start generating network traffic by opening the terminal and pinging the Meta machine four times using the following command: `ping -c 4 10.0.0.11`
+
+<img width="459" height="171" alt="ITrZgQDVuv" src="https://github.com/user-attachments/assets/432a0574-b4c6-4db6-9516-cf6277b57ed0" />
 
 As the ping commences, Wireshark begins capturing the network traffic.
 
 Minimize the terminal once the ping finishes.
 
-What you are now seeing is the same information that was presented to us in tcpdump, just in a more aesthetically pleasing fashion. The column information is the same; from left to right, you have the timestamp, source IP, destination IP, protocol length, and info.
+What you are now seeing is the same information that was presented to us in tcpdump, just in a more aesthetically pleasing fashion. The column information is the same; from left to right you have the timestamp, source IP, destination IP, protocol length, and info.
 
-And if we examine the packets, you can clearly see the Echo request and reply packets. Since we selected a count of four ping packets, the Meta machine will send four reply responses.
+<img width="1919" height="960" alt="vmware_jfftEVTEeR" src="https://github.com/user-attachments/assets/0f26f26a-2db9-428b-885e-d3f9f0aa89d1" />
 
-The bottom right half of the screen displays the hex and ASCII information obtained when running our tcpdump capture with the -XA option. As you select each packet in the central pane, the hex and ASCII information will dynamically change to reflect the information for the selected packet. 
+If we examine the packets, you can clearly see the Echo Request and Reply packets. Since we selected a count of four ping packets, the Meta machine will send four reply responses.
+
+<img width="672" height="89" alt="vmware_2ymKb5Y053" src="https://github.com/user-attachments/assets/91106680-8326-4ae1-b018-6ad4671aef0a" />
+
+The bottom right half of the screen displays the hex and ASCII information just like what we obtained when running our tcpdump capture with the -XA option. As you select each packet in the central pane, the hex and ASCII information will dynamically change to reflect the information for the selected packet.
+
+<img width="961" height="436" alt="vmware_nwADYq1Uzj" src="https://github.com/user-attachments/assets/65dd698d-5efc-4582-83cb-ce6274f14c5d" />
 
 On the bottom left is the Packet Details pane, which provides a detailed breakdown of the selected packet's protocol. As you can see, this pane follows the structure of the OSI model. Choose a packet and click through each section in the packet details pane to see how the packet breaks down.
 
-You can also right-click a packet and select Follow — Stream to view the packet details in another format.
+<img width="959" height="436" alt="vmware_YdkuPKMEqr" src="https://github.com/user-attachments/assets/747c92b6-dc57-4a6b-bbcd-4069a6826784" />
+
+You can also right-click a packet and select Follow > Stream to view the packet details in another format.
 
 You can now stop the capture by clicking the red stop button.
 
-Lastly, let’s see how to read a PCAP file using Wireshark. Let’s use the wakanda.pcap file we saved from our tcpdump capture. Open the file using the terminal by running the command: wireshark wakanda.pcap
+<img width="1919" height="960" alt="fi5tywNAtm" src="https://github.com/user-attachments/assets/e038f0ad-41ce-4498-a779-71780cc2f65d" />
 
- Let’s use Wireshark’s display filter feature. If you recall, we used ftp to log in to the Meta machine. So let’s filter our traffic to display ftp only. In the search bar enter ftp. The central pane now only displays ftp traffic. 
+Lastly, let’s see how to read a PCAP file using Wireshark. Let’s use the firstcapture.pcap file we saved from our tcpdump capture. Open the file using the terminal by running the command: `wireshark firstcapture.pcap`
+
+<img width="246" height="44" alt="MiT2jHZMQJ" src="https://github.com/user-attachments/assets/4074df32-9a6f-44e6-aa7b-a58ff85f2249" />
+
+Let’s use Wireshark’s display filter feature. If you recall, we used ftp to log in to the Meta machine. So let’s filter our traffic to display ftp only. In the search bar enter ftp. The central pane now only displays ftp traffic. 
+
+<img width="615" height="186" alt="m5k2hVVipD" src="https://github.com/user-attachments/assets/3f9ee775-7b01-4e3c-a963-c8adf4b098e0" />
 
 Now, let’s try filtering for ICMP traffic by entering icmp into the search bar.
 
+<img width="795" height="382" alt="40ZHkaJ4sI" src="https://github.com/user-attachments/assets/792bbdef-c1d7-4714-909b-8735bc47e90c" />
+
 Search for ftp traffic again, then right-click on the first packet and select Follow > TCP Stream.
 
-You can now see pertinent information￼, such as the tool used, credentials in clear text, and confirmation that the login was successful, which confirms that the credentials above are valid. 
+<img width="247" height="259" alt="vmware_FQUWxnWdSO" src="https://github.com/user-attachments/assets/0369d12d-b3d5-4875-9117-f9129ff6200a" />
+
+You can now see pertinent information, such as the tool used, credentials in clear text, and confirmation that the login was successful, which confirms that the credentials above are valid. 
+
+<img width="247" height="259" alt="sOJU3F8ssc" src="https://github.com/user-attachments/assets/a62d7c1d-54ae-4346-b3bf-4130ff777172" />
