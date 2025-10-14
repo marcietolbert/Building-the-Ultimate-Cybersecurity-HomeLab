@@ -33,7 +33,7 @@ As always, my goal in documenting any project in this portfolio is to showcase t
 ## Labs
 **Lab 00:** <a href="https://github.com/marcietolbert/Building-the-Ultimate-Cybersecurity-HomeLab/blob/main/Labs/SEC-SOC-Malware-Analysis-VM-Setup.md">SecLab, SOC, and Malware Analysis VM Setup</a>
 
-**Lab 02:** <a href="">Sniffing Network Traffic with Wireshark/tcpdump </a> 
+**Lab 02:** <a href="">Sniffing Network Traffic with tcpdump and Wireshark</a> 
 
 **Lab 05:** Performing Vulnerbility Scanning with Nessus
 
