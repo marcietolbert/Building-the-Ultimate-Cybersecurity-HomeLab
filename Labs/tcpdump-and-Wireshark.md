@@ -181,27 +181,47 @@ Clear the screen.
 
 Now, let’s look at how to write tcpdump captures to a file. Run the following command: `sudo tcpdump -i eth0 -w firstcapture.pcap`
 
+<img width="323" height="62" alt="rbTJMjpRCo" src="https://github.com/user-attachments/assets/784490ea-f313-4e89-9cf4-07caf40d7472" />
+
 This command instructs the shell to run a tcpdump capture with elevated privileges on the eth0 interface and write the capture to a file named firstcapture.pcap. 
 
 To test this, pull up Terminal 2 or 3 and send a few more messages to the other terminal.
 
+<img width="528" height="44" alt="vmware_bIlts8pG8Y" src="https://github.com/user-attachments/assets/de46850b-b054-474c-a5b7-688236bbb54e" />
+
 Then, terminate the connection to the other terminal using *Ctrl+C*.
 
-Close the third terminal, clear the screen on the second terminal, and then run the following command to ping the Meta machine: `ping 10.0.0.11`
+Close the third terminal, clear the screen on the second terminal, then run the following command to ping the Meta machine: `ping 10.0.0.11`
 
-Now, let’s run the following command to help generate more network traffic for our capture: `ftp 10.0.0.11`
+<img width="685" height="444" alt="s9z6KRwOA1" src="https://github.com/user-attachments/assets/898ba4fd-7cfe-4842-8b03-b03bbaeb997a" />
+
+Now, run the following command to help generate more network traffic for our capture: `ftp 10.0.0.11`
+
+<img width="686" height="178" alt="7YfGf68Ctm" src="https://github.com/user-attachments/assets/dd8b189a-6517-4ac4-967a-f15add03636f" />
 
 Log in to the Meta machine with the mfsadmin credentials. 
 
-Close the terminal window, then stop the TCPdump capture currently running in the first terminal using *Ctrl+C*.
+<img width="686" height="178" alt="exGIRknLh2" src="https://github.com/user-attachments/assets/fa604ce9-ffca-410f-b5f1-c54c469ffb9f" />
+
+Close the Terminal 2 window, then stop the tcpdump capture currently running in the first terminal using *Ctrl+C*.
 
 Now, if we run the `ls` command, we can see that we have a firstcapture.pcap file in our current working directory.
 
-To read the capture, run the following command: `sudo tcpdump -r firstcapture.pcap` Using the -r option allows us to read the pcap file.
+<img width="199" height="58" alt="qJgSNFKVQi" src="https://github.com/user-attachments/assets/e5b1f465-3933-4d20-a2f2-3b2108df9ef3" />
+
+To read the capture, run the following command: `sudo tcpdump -r firstcapture.pcap` 
+
+![ODsCKnoAFV](https://github.com/user-attachments/assets/6ceec4c4-ca40-4f6b-9f07-753451417f70)
+
+Using the -r option allows us to read the pcap file.
 
 You can also run the -XA options against the file to view both the hex and ASCII representations.
 
+![SD3IANAcFH](https://github.com/user-attachments/assets/cddb458a-aa97-4bc7-9d9a-9d12d3802df0)
+
 Scroll through the capture to see what you can find related to logging into the Meta machine. 
+
+<img width="1320" height="817" alt="IPLbygKQhR" src="https://github.com/user-attachments/assets/4836d72f-5dae-465a-bdbd-c000004f1aec" />
 
 Clear the screen.
 
