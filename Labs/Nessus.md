@@ -5,7 +5,7 @@ We have now reached Lab Five in the **Building the Ultimate Cybersecurity Homela
 As stated above, we know that Nessus is one of many vulnerability scanners used to identify security weaknesses in systems, networks, and applications. 
 To do this, Nessus uses a plugin database that contains the logic for detecting specific vulnerabilities (CVEs, misconfigurations, and compliance violations). 
 
-Nessus can perform various types of scans, including credentialed and non-credentialed scans, as well as compliance scans. Credentialed scans are performed while logged in and, therefore, can conduct a more thorough check. Non-credentialed scans perform an external check without requiring a login. Compliance scans verify adherence to standards such as CIS benchmarks, PCI DSS, and HIPAA.
+In fact, Nessus can perform various types of scans, including credentialed and non-credentialed scans, as well as compliance scans. Credentialed scans are performed while logged in and, therefore, can conduct a more thorough check. Non-credentialed scans perform an external check without requiring a login. Compliance scans verify adherence to standards such as CIS benchmarks, PCI DSS, and HIPAA.
 
 Lastly, Nessus produces detailed reports that rank the vulnerabilities found in a scan by severity (e.g., critical, high, medium, low), along with remediation recommendations.
 
